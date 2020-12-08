@@ -19,6 +19,7 @@ public interface RawElement {
     }
 
     default RawElement fromContext(ParserRuleContext context, RawElement parent) throws ValidationException {
+        //from antlr context to self defined data structure
         throw ValidationException.UnderDevelopment();
     }
 
@@ -61,6 +62,7 @@ public interface RawElement {
     }
 
     default Scope getTopScope() throws ValidationException {
+        //return a class which implements Scope
         List<Scope> scopes = this.getScopes();
         return scopes.get(scopes.size() - 1);
     }

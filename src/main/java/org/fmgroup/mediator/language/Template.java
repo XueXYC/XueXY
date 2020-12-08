@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Template implements RawElement, DeclarationCollection<Declaration> {
-
+    //handling template
     private RawElement parent;
 
     private List<Declaration> params = new ArrayList<>();

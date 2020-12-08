@@ -27,6 +27,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Program implements RawElement, Scope {
+    /* structure of a program */
 
     private List<Program> dependencies = new ArrayList<>();
     private TypeDeclarationCollection typedefs = new TypeDeclarationCollection();
@@ -99,6 +100,7 @@ public class Program implements RawElement, Scope {
 
     @Override
     public Program fromContext(ParserRuleContext context, RawElement parent) throws ValidationException {
+        //input should be ProgContext
         if (!(context instanceof MediatorLangParser.ProgContext)) {
             throw ValidationException.IncompatibleContextType(this.getClass(), "ProgContext", context.toString());
         }
@@ -245,6 +247,10 @@ public class Program implements RawElement, Scope {
     }
 
     public static Program parseFile(String filename, List<String> externalPaths) throws FileNotFoundException {
+        /* parse file to program
+        * filename is the input file, externalPaths is where we can find the file,
+        * return a program which is described by the file
+        */
         File file = null;
         List<String> paths = new ArrayList<>();
 
@@ -255,7 +261,7 @@ public class Program implements RawElement, Scope {
 
         for (String path : paths) {
             if (Files.exists(Paths.get(path, filename))) {
-                file = Paths.get(path, filename).toFile();
+                file = Paths.get(path, filename).toFile();   //get the file
             }
         }
 
@@ -273,17 +279,21 @@ public class Program implements RawElement, Scope {
             MediatorLangParser parser = new MediatorLangParser(ts);
 
             // register exception listener
+            //handle exceptions?
             parser.removeErrorListeners();
             VerboseListener listener = new VerboseListener();
             parser.addErrorListener(listener);
 
+            //enter through rule 'prog'
             MediatorLangParser.ProgContext prog = parser.prog();
+            //error handling
             if (!listener.Succeed()) {
                 for (ValidationException ex: listener.getExceptions()) {
                     java.lang.System.err.println(ex.toString());
                 }
                 return null;
             }
+            //create a Program object and do semantic analysis, create relevant data structure to store the program
             return new Program().setExternalPaths(externalPaths).fromContext(prog, null);
         } catch (IOException e) {
             e.printStackTrace();

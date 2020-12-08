@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface Scope extends RawElement{
+    //get the element in an entity
 
     List<DeclarationCollection> getDeclarations();
 
