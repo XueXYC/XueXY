@@ -1,5 +1,6 @@
-// Generated from /Users/liyi/Dropbox/Projects/Mediator/src-antlr/MediatorLang.g4 by ANTLR 4.7
+// Generated from F:/Mediator Project/Mediator Origin/src-antlr\MediatorLang.g4 by ANTLR 4.9
 package org.fmgroup.mediator.language.generated;
+
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -71,6 +72,18 @@ public interface MediatorLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSynchronizingStatement(MediatorLangParser.SynchronizingStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code flowStatement}
+	 * labeled alternative in {@link MediatorLangParser#statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterFlowStatement(MediatorLangParser.FlowStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code flowStatement}
+	 * labeled alternative in {@link MediatorLangParser#statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitFlowStatement(MediatorLangParser.FlowStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code returnStatement}
 	 * labeled alternative in {@link MediatorLangParser#statement}.
@@ -937,6 +950,18 @@ public interface MediatorLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStructType(MediatorLangParser.StructTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code continousType}
+	 * labeled alternative in {@link MediatorLangParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterContinousType(MediatorLangParser.ContinousTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code continousType}
+	 * labeled alternative in {@link MediatorLangParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitContinousType(MediatorLangParser.ContinousTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code nullType}
 	 * labeled alternative in {@link MediatorLangParser#type}.

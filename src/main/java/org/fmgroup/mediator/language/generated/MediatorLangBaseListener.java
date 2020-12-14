@@ -1,4 +1,4 @@
-// Generated from /Users/liyi/Dropbox/Projects/Mediator/src-antlr/MediatorLang.g4 by ANTLR 4.7
+// Generated from F:/Mediator Project/Mediator Origin/src-antlr\MediatorLang.g4 by ANTLR 4.9
 package org.fmgroup.mediator.language.generated;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -83,6 +83,18 @@ public class MediatorLangBaseListener implements MediatorLangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitSynchronizingStatement(MediatorLangParser.SynchronizingStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFlowStatement(MediatorLangParser.FlowStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFlowStatement(MediatorLangParser.FlowStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -995,6 +1007,18 @@ public class MediatorLangBaseListener implements MediatorLangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStructType(MediatorLangParser.StructTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterContinousType(MediatorLangParser.ContinousTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitContinousType(MediatorLangParser.ContinousTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

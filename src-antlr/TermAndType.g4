@@ -58,10 +58,11 @@ type:   '(' type ')'                                                # bracketTyp
     |   'char'                                                      # charType
     |   'double'                                                    # doubleType
     |   'bool'                                                      # boolType
+    |   'conti'                                                     # continousType
     |   'enum' '{' ID (',' ID) * '}'                                # enumType
     |   'struct' '{' (ID ':' type ';') + '}'                        # structType
     |   type '[' capacity=term ? ']'                                # listType
-    |   type 'init' term                                            # initType
+    |   type 'init' val=term ('der' der=term)?                      # initType
     |   type '|' type                                               # unionType
     |   'type'                                                      # abstractType
     |   'NULL'                                                      # nullType

@@ -1,0 +1,9 @@
+automaton thermostat () {
+    variables {
+        x : conti init 2.0 der 1.0;
+    }
+    transitions {
+        x >= 3 -> der(x) = -1;
+        x <= 1 -> der(x) = 1;
+    }
+}

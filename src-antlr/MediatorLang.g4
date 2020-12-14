@@ -18,7 +18,8 @@ portIdentifier: (owner=ID '.')? identifier=ID;
 statement:
     (target=term '=')? expr=term ';'                                        # assignmentStatement
     |   'sync' portIdentifier (',' portIdentifier)*   ';'                   # synchronizingStatement
-    |   'return' term         ';'                                           # returnStatement
+    |   'der' '(' target=term ')' '=' der=term ';'                          # flowStatement
+    |   'return' term ';'                                                   # returnStatement
     |   'if' '(' condition=term ')'
         (thenstmt=statement | '{' thenstmts=statements '}')
         ('else' (elsestmt=statement | '{' elsestmts=statements '}'))?       # iteStatement
@@ -137,4 +138,4 @@ meta
 
 LINE_COMMENT  : '//' .*? '\r'? '\n' -> skip ; // Match"//" stuff '\n'
 COMMENT       : '/*' .*? '*/' -> skip ;        // Match "/*" stuff "*/"
-IGNORE          : ('\t'|' '|'\n') -> skip;
+IGNORE          : ('\t'|' '|'\n'|'\r') -> skip;

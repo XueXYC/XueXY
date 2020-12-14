@@ -40,9 +40,9 @@ public class InitType implements Type {
         if (!(context instanceof MediatorLangParser.InitTypeContext)) {
             throw ValidationException.IncompatibleContextType(this.getClass(), "InitTypeContext", context.toString());
         }
-
         setParent(parent);
-        setDefaultValue(Term.parse(((MediatorLangParser.InitTypeContext) context).term(), this));
+//        setDefaultValue(Term.parse(((MediatorLangParser.InitTypeContext) context).term(), this));
+        setDefaultValue(Term.parse(((MediatorLangParser.InitTypeContext) context).val, this));
         setBaseType(Type.parse(((MediatorLangParser.InitTypeContext) context).type(), this));
 
         return this;

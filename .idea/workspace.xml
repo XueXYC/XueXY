@@ -22,17 +22,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89ba4046-2dc9-4a2b-a905-b108fae88d3c" name="Default" comment="reformed scheduler as a">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="89ba4046-2dc9-4a2b-a905-b108fae88d3c" name="Default" comment="Change the syntax to immediate change hybrid syntax. Change dependency to antlr 4.9.">
+      <changelist_data name="xue-xy" email="" />
+      <change afterPath="$PROJECT_DIR$/resources/models/test/hybridsingle.med" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.interp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/RawElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/RawElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/scope/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/scope/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-antlr/MediatorLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src-antlr/MediatorLang.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-antlr/TermAndType.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src-antlr/TermAndType.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/termType/InitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/termType/InitType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +66,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="xue-xy" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -92,11 +105,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ANTLR learning/try2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/models/test/hybridsingle.med" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -215,10 +228,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Default" />
       <item itemvalue="Application.Debug" />
-      <item itemvalue="Application.Generate Test" />
+      <item itemvalue="Application.Default" />
       <item itemvalue="Application.Generate Test (basic connection)" />
+      <item itemvalue="Application.Generate Test" />
       <item itemvalue="Application.Parse" />
       <item itemvalue="Application.Test" />
     </list>
@@ -358,6 +371,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -386,9 +409,20 @@
     <MESSAGE value="simulator plugin added" />
     <MESSAGE value="basic plugin support added" />
     <MESSAGE value="added a rough packager and relative scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a rough packager and relative scripts" />
+    <MESSAGE value="Change the syntax to immediate change syntax. &#10;Syntax part. Add continousTpye. Change initType and add flowStatement. Relevant fromcontex metod need to be changed." />
+    <MESSAGE value="Change the syntax to immediate change syntax." />
+    <MESSAGE value="Change the syntax to immediate change hybrid syntax. Change dependency to antlr 4.9." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the syntax to immediate change hybrid syntax. Change dependency to antlr 4.9." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="418" y="187" key="#Notifications" timestamp="1607427464977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="418" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1607427464977" />
+    <state x="163" y="0" key="#Project_Structure" timestamp="1607432063132">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1607432063132" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607425016757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -397,26 +431,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607308354052" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1607331971480">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1607430032157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607331971480" />
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom" timestamp="1607425860779">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1607430032157" />
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1607934563900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607425860779" />
-    <state width="1323" height="218" key="GridCell.Tab.0.center" timestamp="1607425860779">
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607934563900" />
+    <state width="1323" height="218" key="GridCell.Tab.0.bottom" timestamp="1607937956001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607425860779" />
-    <state width="1323" height="218" key="GridCell.Tab.0.left" timestamp="1607425860779">
+    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
+    <state width="1323" height="218" key="GridCell.Tab.0.center" timestamp="1607937956001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607425860779" />
-    <state width="1323" height="218" key="GridCell.Tab.0.right" timestamp="1607425860779">
+    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
+    <state width="1323" height="218" key="GridCell.Tab.0.left" timestamp="1607937956001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607425860779" />
+    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
+    <state width="1323" height="218" key="GridCell.Tab.0.right" timestamp="1607937956001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1607937141528">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607937141528" />
     <state x="68" y="0" key="new project wizard" timestamp="1607309031441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -456,80 +498,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Mediator</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: net.sourceforge.argparse4j:argparse4j:0.8.1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
