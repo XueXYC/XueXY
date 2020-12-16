@@ -35,9 +35,12 @@ public interface Type extends RawElement {
             return new IdType().fromContext(tc, parent);
         if (tc instanceof MediatorLangParser.NullTypeContext)
             return new NullType().fromContext(tc, parent);
+        if (tc instanceof MediatorLangParser.ContinousTypeContext)
+            return new ContinuousType().fromContext(tc, parent);
 
         if (tc instanceof MediatorLangParser.TupleTypeContext)
             return new TupleType().fromContext(tc, parent);
+        //type initialization
         if (tc instanceof MediatorLangParser.InitTypeContext)
             return new InitType().fromContext(tc, parent);
         if (tc instanceof MediatorLangParser.ListTypeContext)

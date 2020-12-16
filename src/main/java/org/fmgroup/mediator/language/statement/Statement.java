@@ -24,6 +24,9 @@ public interface Statement extends RawElement {
         if (sc instanceof MediatorLangParser.ReturnStatementContext) {
             return new ReturnStatement().fromContext(sc, parent);
         }
+        if (sc instanceof MediatorLangParser.FlowStatementContext) {
+            return new FlowStatement().fromContext(sc, parent);
+        }
 
         throw ValidationException.UnregisteredStatement(sc.getClass().toString());
     }

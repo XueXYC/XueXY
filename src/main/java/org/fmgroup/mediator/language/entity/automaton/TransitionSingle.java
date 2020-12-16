@@ -71,10 +71,13 @@ public class TransitionSingle implements Transition, Statements {
          *    }
          *
          * in these different cases, the assigned fields in the context are different, plz refer to the antlr source file
+         * To be implemented: the clock part. This part belongs to the multi statements case.
          */
         if (((MediatorLangParser.TransitionSingleContext) context).statement() != null) {
+            //single statement case
             addStatement(Statement.parse(((MediatorLangParser.TransitionSingleContext) context).statement(), this));
         } else {
+            //multi statements case
             for (MediatorLangParser.StatementContext sc : ((MediatorLangParser.TransitionSingleContext) context).statements().statement()) {
                 addStatement(Statement.parse(sc, this));
             }

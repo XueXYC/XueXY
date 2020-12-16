@@ -269,5 +269,5 @@ public class Automaton implements Entity, Scope, Templated {
 
         return result;
     }
-
 }
+

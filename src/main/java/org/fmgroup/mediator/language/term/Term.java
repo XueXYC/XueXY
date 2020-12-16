@@ -15,7 +15,6 @@ public interface Term extends RawElement {
             return Term.parseValue(((MediatorLangParser.ValueTermContext) term).value(), parent);
         }
 
-
         if (term instanceof MediatorLangParser.BracketTermContext) {
             return parse(((MediatorLangParser.BracketTermContext) term).term(), parent);
         }
@@ -64,6 +63,9 @@ public interface Term extends RawElement {
         }
         if (value instanceof MediatorLangParser.PortVarValueContext) {
             return new PortVariableValue().fromContext(value, parent);
+        }
+        if (value instanceof MediatorLangParser.DoubleValueContext) {
+            return new DoubleValue().fromContext(value, parent);
         }
 
         throw ValidationException.UnregisteredTerm(value.getClass().toString());

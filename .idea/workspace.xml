@@ -23,23 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ba4046-2dc9-4a2b-a905-b108fae88d3c" name="Default" comment="Change the syntax to immediate change hybrid syntax. Change dependency to antlr 4.9.">
-      <changelist_data name="xue-xy" email="" />
-      <change afterPath="$PROJECT_DIR$/resources/models/test/hybridsingle.med" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/statement/FlowStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/termType/ContinuousType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-antlr/MediatorLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src-antlr/MediatorLang.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-antlr/TermAndType.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src-antlr/TermAndType.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLang.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/generated/MediatorLangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/models/testbench.med" beforeDir="false" afterPath="$PROJECT_DIR$/resources/models/testbench.med" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/entity/automaton/Automaton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/entity/automaton/Automaton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/entity/automaton/TransitionSingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/entity/automaton/TransitionSingle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/statement/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/statement/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/term/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/term/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/termType/InitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fmgroup/mediator/language/type/termType/InitType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +61,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="xue-xy &lt;35564615+xue-xy@users.noreply.github.com&gt;" />
         <option value="xue-xy" />
       </list>
     </option>
@@ -362,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512741699153</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Change the syntax to immediate change hybrid syntax. Change dependency to antlr 4.9.">
+      <created>1607938171703</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607938171703</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -431,6 +432,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607308354052" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1608088583663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608088583663" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1607430032157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -439,22 +444,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607934563900" />
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom" timestamp="1607937956001">
+    <state width="1323" height="136" key="GridCell.Tab.0.bottom" timestamp="1608098555924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
-    <state width="1323" height="218" key="GridCell.Tab.0.center" timestamp="1607937956001">
+    <state width="1323" height="136" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608098555924" />
+    <state width="1877" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608043599353" />
+    <state width="1323" height="136" key="GridCell.Tab.0.center" timestamp="1608098555924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
-    <state width="1323" height="218" key="GridCell.Tab.0.left" timestamp="1607937956001">
+    <state width="1323" height="136" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608098555924" />
+    <state width="1877" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608043599353" />
+    <state width="1323" height="136" key="GridCell.Tab.0.left" timestamp="1608098555924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
-    <state width="1323" height="218" key="GridCell.Tab.0.right" timestamp="1607937956001">
+    <state width="1323" height="136" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608098555924" />
+    <state width="1877" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608043599353" />
+    <state width="1323" height="136" key="GridCell.Tab.0.right" timestamp="1608098555924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607937956001" />
+    <state width="1323" height="136" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608098555924" />
+    <state width="1877" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608043599353" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1607937141528">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

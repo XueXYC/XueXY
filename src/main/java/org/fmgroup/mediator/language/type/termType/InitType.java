@@ -14,6 +14,7 @@ public class InitType implements Type {
     private RawElement parent = null;
     private Term defaultValue = null;
     private Type baseType = null;
+    private Term derivativeValue = null;
 
     public Term getDefaultValue() {
         return defaultValue;
@@ -35,15 +36,29 @@ public class InitType implements Type {
         return this;
     }
 
+    public Term getDerivativeValue() {
+        return derivativeValue;
+    }
+
+    public InitType setDerivativeValue(Term derivativeValue) {
+        this.derivativeValue = derivativeValue;
+        derivativeValue.setParent(this);
+        return this;
+    }
+
     @Override
     public InitType fromContext(ParserRuleContext context, RawElement parent) throws ValidationException {
         if (!(context instanceof MediatorLangParser.InitTypeContext)) {
             throw ValidationException.IncompatibleContextType(this.getClass(), "InitTypeContext", context.toString());
         }
+
         setParent(parent);
-//        setDefaultValue(Term.parse(((MediatorLangParser.InitTypeContext) context).term(), this));
         setDefaultValue(Term.parse(((MediatorLangParser.InitTypeContext) context).val, this));
         setBaseType(Type.parse(((MediatorLangParser.InitTypeContext) context).type(), this));
+
+        if (((MediatorLangParser.InitTypeContext) context).der != null) {
+            setDerivativeValue(Term.parse(((MediatorLangParser.InitTypeContext) context).der, this));
+        }
 
         return this;
     }
@@ -62,7 +77,11 @@ public class InitType implements Type {
 
     @Override
     public String toString() {
-        return baseType.toString() + " init " + defaultValue.toString();
+        String str = baseType.toString() + " init " + defaultValue.toString();
+        if (derivativeValue != null) {
+            str = str + (" der " + derivativeValue.toString());
+        }
+        return str;
     }
 
     @Override
