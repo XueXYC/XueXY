@@ -1,0 +1,65 @@
+automaton <initial:bool> tank (c: out bool) {
+    variables {
+        state : int 0 .. 2 init 0;
+        flow : bool init initial;
+        v : conti init 0.0 der 0;
+    }
+    transitions {
+        v<100 && flow && c.reqWrite -> c.reqWrite = false;
+        !flow && !c.reqWrite -> c.reqWrite = true;
+        state==0 && flow -> {
+            state = 1;
+            der(v) = 1;
+        }
+        state==1 && flow -> {
+            state = 2;
+            der(v) = 0;
+        }
+        state==1 && !flow && v==0 -> {
+            state = 0;
+            der(v) = 0;
+        }
+        state==2 && flow -> c.reqWrite = true;
+        state==2 && !flow -> {
+            state = 1;
+            der(v) = -1;
+        }
+
+        flow && c.reqWrite -> {
+            sync c;
+            flow = false;
+        }
+        !flow && c.reqWrite -> {
+            sync c;
+            flow = true;
+            der(v) = 1;
+        }
+    }
+}
+
+automaton SyncDrain (a: in bool, b: in bool) {
+	transitions {
+		(a.reqWrite && b.reqWrite && (!a.reqRead || !b.reqRead)) -> {
+		    a.reqRead = true;
+		    b.reqRead = true;
+		}
+		((!a.reqWrite || !b.reqWrite) && (a.reqRead || b.reqRead)) -> {
+		    a.reqRead = false;
+		    b.reqRead = false;
+		}
+
+		(a.reqRead && b.reqRead) -> {
+			sync a, b;
+		}
+	}
+}
+
+system twotanks () {
+    components {
+        t1 : tank<true>;
+        t2 : tank<false>;
+    }
+    connections {
+        SyncDrain(t1.c, t2.c);
+    }
+}
