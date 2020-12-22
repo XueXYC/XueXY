@@ -1,9 +1,16 @@
 automaton thermostat () {
     variables {
+        state : bool init true;
         x : conti init 2.0 der 1.0;
     }
     transitions {
-        x >= 3 -> der(x) = -1;
-        x <= 1 -> der(x) = 1;
+        state && x>=3 -> {
+            state = false;
+            der(x) = -1;
+        }
+        !state && x<=1 -> {
+            state = true;
+            der(x) = 1;
+        }
     }
 }
