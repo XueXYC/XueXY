@@ -1,7 +1,7 @@
 automaton <initial:bool> tank (c: out bool) {
     variables {
         state : int 0 .. 2 init 0;
-        flow : bool init initial;
+        flow : bool init true;
         v : conti init 0.0 der 0;
     }
     transitions {
