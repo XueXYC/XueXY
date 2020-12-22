@@ -15,8 +15,8 @@ public class BoolType implements Type {
     private RawElement parent = null;
 
     @Override
-    public Type refactor(Map<String, Type> typeRewriteMap, Map<String, Term> termRewriteMap) throws ValidationException {
-        return null;
+    public BoolType refactor(Map<String, Type> typeRewriteMap, Map<String, Term> termRewriteMap) throws ValidationException {
+        return this;
     }
 
     @Override
